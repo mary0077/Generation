@@ -4,7 +4,6 @@ const sequelize = require('./config/database');
 const alunosRouter = require('./routes/alunos');
 const setupSwagger = require('./swagger');
 
-
 const app = express();
 app.use(bodyParser.json());
 
@@ -15,11 +14,11 @@ setupSwagger(app);
 sequelize.sync()
   .then(() => {
     console.log('Banco de dados conectado');
-    app.listen(3077, () => {
-      console.log('Servidor rodando na porta 3077');
+    const port = process.env.PORT || 3077;
+    app.listen(port, () => {
+      console.log(`Servidor rodando na porta ${port}`);
     });
   })
   .catch(err => {
     console.error('Erro ao conectar com o banco de dados:', err);
   });
-
