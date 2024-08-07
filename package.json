@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "sucesso"
+    "test": "sucesso",
+    "vercel-build": "npm deploy"
   },
   "keywords": [],
   "author": "",
