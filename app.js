@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const sequelize = require('./config/database');
 const alunosRouter = require('./routes/alunos');
 const setupSwagger = require('./swagger');
-import { injectSpeedInsights } from '@vercel/speed-insights';
 
 
 const app = express();
@@ -24,4 +23,3 @@ sequelize.sync()
     console.error('Erro ao conectar com o banco de dados:', err);
   });
 
-  injectSpeedInsights();
