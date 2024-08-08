@@ -15,7 +15,7 @@ setupSwagger(app);
 sequelize.sync()
   .then(() => {
     console.log('Banco de dados conectado');
-    const port = process.env.PORT || 3077;
+    const port = process.env.PORT || 3000;
     app.listen(port, () => {
       console.log(`Servidor rodando na porta ${port}`);
     });
