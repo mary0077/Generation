@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "test": "sucesso",
-    "build": "node build.js",
     "vercel-build": "npx prisma migrate deploy"
   },
   "keywords": [],
