@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "sucesso",
-    "vercel-build": "npx prisma migrate deploy"
+    "test": "sucesso"
   },
   "keywords": [],
   "author": "",
