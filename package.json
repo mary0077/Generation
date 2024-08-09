@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
-    "test": "sucesso"
+    "test": "sucesso",
+    "build": "tsup app.js"
   },
   "keywords": [],
   "author": "",
